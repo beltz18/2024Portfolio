@@ -1,0 +1,15 @@
+{
+  "navbar": [
+    "Experience",
+    "Contact",
+    "Collaborators"
+  ],
+  "hero": {
+    "name": "Andi Montilla",
+    "title": "SR Full Stack Developer",
+    "paragraph": [
+      "With 5+ years of hands-on versatile experience as a Full Stack Developer, I build powerful and scalable applications that bridge front-end flair with back-end resilience. I thrive on collaboration with cross-functional teams, often leading agile groups of 5-10 to deliver impactful, user-centered projects. Known for my creative problem-solving and keen eye for debugging, I bring a balance of technical skill and innovation, consistently turning complex challenges into seamless, efficient solutions. Whether working under tight timelines or exploring the next big idea, I&apos;m committed to crafting tech that makes the difference.",
+      "Beyond the code, I&apos;m a proactive communicator and strategic thinker who thrives in dynamic, fast-paced environments. Very passionate about keeping up with emerging technologies, always seeking out tools and methods to elevate both my team&apos;s productivity and the user experience. My approach combines technical depth with a user-first mindset, ensuring every project not only meets requirements but also resonates with end-users. I&apos;m driven by the challenge of transforming complex ideas into streamlined, intuitive applications that push boundaries and deliver real value."
+    ]
+  }
+}

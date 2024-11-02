@@ -1,6 +1,6 @@
 'use client'
 
-import React from 'react'
+import React        from 'react'
 import { useState } from 'react'
 import {
   Navbar,
@@ -15,7 +15,6 @@ import {
 } from '@nextui-org/react'
 import {
   baseClasses,
-  itemClasses,
   menuItems,
 } from '@lib/util'
 
@@ -26,10 +25,7 @@ const Header = () => {
   return (
     <>
       <Navbar
-        classNames={{
-          item: itemClasses,
-          base: baseClasses,
-        }}
+        classNames={{ base: baseClasses }}
         maxWidth={'xl'}
         position='sticky'
         isBordered={ true }

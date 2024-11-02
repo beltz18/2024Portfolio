@@ -1,6 +1,6 @@
 {
   "name": "client",
-  "version": "0.1",
+  "version": "0.2",
   "private": true,
   "author": "Andi M",
   "repository": "https://github.com/beltz18/2024Portfolio.git",
@@ -17,7 +17,8 @@
     "framer-motion": "^11.11.11",
     "next": "14.2.15",
     "react": "^18",
-    "react-dom": "^18"
+    "react-dom": "^18",
+    "typed.js": "^2.1.0"
   },
   "devDependencies": {
     "@types/node": "^20",

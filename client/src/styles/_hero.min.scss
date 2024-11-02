@@ -1,0 +1,43 @@
+.hero {
+  &-two {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative
+  }
+
+  &-logo {
+    width: 300px;
+    height: 300px;
+    cursor: pointer;
+    z-index: 1;
+    position: absolute;
+    animation: smoke 2.5s linear infinite
+  }
+
+  &-logo2 {
+    width: 300px;
+    height: 300px;
+    cursor: pointer;
+    z-index: -1;
+    box-shadow: 0 15px 15px var(--dark-slate)
+  }
+}
+
+@keyframes smoke {
+  0% {
+    opacity: 1;
+    filter: blur(1px)
+  }
+
+  90% {
+    opacity: 0;
+    filter: blur(50px);
+    transform: scale(1.2)
+  }
+
+  100% {
+    opacity: 0;
+    filter: blur(100px)
+  }
+}
