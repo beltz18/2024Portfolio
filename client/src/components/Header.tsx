@@ -34,7 +34,6 @@ const Header = () => {
         position='sticky'
         isBordered={ true }
         isBlurred={ false }
-        shouldHideOnScroll
         isMenuOpen={ menuOpen }
         onMenuOpenChange={ setMenuOpen }
       >
@@ -72,7 +71,7 @@ const Header = () => {
         <NavbarContent as='div' justify='end'>
           <Avatar
             as='button'
-            className='w-[45px] h-[45px] bg-[#132233] border-[2px] border-[#598392] transition-transform'
+            className='w-[40px] h-[40px] bg-[#132233] border-[2px] border-[#598392] transition-transform'
             color='success'
             name='Andi Dev'
             size='sm'
@@ -80,7 +79,7 @@ const Header = () => {
           />
         </NavbarContent>
 
-        <NavbarMenu className='w-full bg-[#003049] py-8'>
+        <NavbarMenu className='w-full h-full bg-[#003049] z-50'>
           {
             menuItems.map((item, index) => (
               <NavbarMenuItem key={`${item}-${index}`}>

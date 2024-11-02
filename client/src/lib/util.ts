@@ -1,6 +1,7 @@
 export const baseClasses = [
   'h-[10vh]',
   'bg-[#003049]',
+  'z-50'
 ]
 
 export const itemClasses = [

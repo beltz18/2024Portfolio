@@ -1,6 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
-body,html { scroll-behavior: smooth!important }
+body,html {
+  overflow-x: hidden;
+  background-color: #01161E;
+  scroll-behavior: smooth!important;
+}
 
 * {
   margin: 0;

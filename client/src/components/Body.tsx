@@ -1,18 +1,21 @@
 import React from 'react'
+import Hero  from '@com/Hero'
 
 const Body = () => {
   return (
     <>
-      <div className='w-full h-full bg-[#01161E] text-[#F2F2F2]'>
-        <div className='max-w-[1288px] py-4 px-[24px] mx-auto'>
-          <h1 className='text-[42px]'>Andi Montilla</h1>
+      <div className='w-full h-full text-[#F2F2F2]'>
+      <div className='animated' />
+        <div className='max-w-[1288px] mx-auto'>
+          <Hero />
 
-          <p className='text-[14px] text-justify'>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit.
-            Numquam nobis nesciunt tempore sint officiis quo ex incidunt!
-            Beatae magni optio excepturi eum nostrum voluptatum, dolores
-            inventore exercitationem unde nulla neque.
-          </p>
+          <div className='pt-4 pb-8 px-[24px]'>
+            <p>
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Saepe, officiis autem asperiores
+              aliquid reprehenderit molestias ipsum aperiam nihil temporibus dolore, culpa ad. Eum harum,
+              atque assumenda molestiae sunt esse. Minus?
+            </p>
+          </div>
         </div>
       </div>
     </>

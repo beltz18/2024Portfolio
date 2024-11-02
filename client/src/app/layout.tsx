@@ -6,6 +6,9 @@ import { DESCRIPTION, TITLE } from '@lib/var'
 export const metadata: Metadata = {
   title: TITLE,
   description: DESCRIPTION,
+  icons: {
+    icon: '/andi-dev.ico'
+  }
 }
 
 export default function RootLayout({ children }:
