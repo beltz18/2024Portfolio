@@ -1,0 +1,30 @@
+{
+  "name": "server",
+  "version": "0.1",
+  "main": "src/server.js",
+  "repository": "https://github.com/beltz18/2024Portfolio.git",
+  "author": "Andi M",
+  "license": "MIT",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "start": "node --env-file .env src/server.js",
+    "dev": "node --watch --env-file .env src/server.js"
+  },
+  "dependencies": {
+    "body-parser": "^1.20.3",
+    "cors": "^2.8.5",
+    "express": "^4.21.1"
+  },
+  "devDependencies": {
+    "morgan": "^1.10.0"
+  },
+  "_moduleAliases": {
+    "@root": ".",
+    "@con": "src/controllers",
+    "@glo": "global",
+    "@lib": "src/lib",
+    "@mod": "src/models",
+    "@rou": "src/routes"
+  }
+}
