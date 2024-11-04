@@ -1,6 +1,8 @@
-export const LinkedIn = () => {
+import { IconT } from '@typ/Hero'
+
+export const LinkedIn = ({ size }: IconT) => {
   return (
-    <svg width="40px" height="40px" viewBox="0 0 16 16" fill="none">
+    <svg width={ size } height={ size } viewBox="0 0 16 16" fill="none">
       <g id="SVGRepo_bgCarrier" strokeWidth="0" />
       <g id="SVGRepo_tracerCarrier" strokeLinecap="round" strokeLinejoin="round" />
       <g id="SVGRepo_iconCarrier">
@@ -13,9 +15,9 @@ export const LinkedIn = () => {
   )
 }
 
-export const GitHub = () => {
+export const GitHub = ({ size }: IconT) => {
   return (
-    <svg width="40px" height="40px" viewBox="0 0 73 73" fill="none">
+    <svg width={ size } height={ size } viewBox="0 0 73 73" fill="none">
       <g id="SVGRepo_bgCarrier" strokeWidth="0" />
       <g id="SVGRepo_tracerCarrier" strokeLinecap="round" strokeLinejoin="round" />
       <g id="SVGRepo_iconCarrier">
@@ -33,9 +35,9 @@ export const GitHub = () => {
   )
 }
 
-export const YouTube = () => {
+export const YouTube = ({ size }: IconT) => {
   return (
-    <svg width="40px" height="40px" viewBox="0 -7 48 48" fill="#000000">
+    <svg width={ size } height={ size } viewBox="0 -7 48 48" fill="#000000">
       <g id="SVGRepo_bgCarrier" strokeWidth="0" />
       <g id="SVGRepo_tracerCarrier" strokeLinecap="round" strokeLinejoin="round" />
       <g id="SVGRepo_iconCarrier">
@@ -44,6 +46,77 @@ export const YouTube = () => {
             <path d="M219.044,391.269916 L219.0425,377.687742 L232.0115,384.502244 L219.044,391.269916 Z M247.52,375.334163 C247.52,375.334163 247.0505,372.003199 245.612,370.536366 C243.7865,368.610299 241.7405,368.601235 240.803,368.489448 C234.086,368 224.0105,368 224.0105,368 L223.9895,368 C223.9895,368 213.914,368 207.197,368.489448 C206.258,368.601235 204.2135,368.610299 202.3865,370.536366 C200.948,372.003199 200.48,375.334163 200.48,375.334163 C200.48,375.334163 200,379.246723 200,383.157773 L200,386.82561 C200,390.73817 200.48,394.64922 200.48,394.64922 C200.48,394.64922 200.948,397.980184 202.3865,399.447016 C204.2135,401.373084 206.612,401.312658 207.68,401.513574 C211.52,401.885191 224,402 224,402 C224,402 234.086,401.984894 240.803,401.495446 C241.7405,401.382148 243.7865,401.373084 245.612,399.447016 C247.0505,397.980184 247.52,394.64922 247.52,394.64922 C247.52,394.64922 248,390.73817 248,386.82561 L248,383.157773 C248,379.246723 247.52,375.334163 247.52,375.334163 L247.52,375.334163 Z" />
           </g>
         </g>
+      </g>
+    </svg>
+  )
+}
+
+export const Lang = () => {
+  return (
+    <svg
+      width="25px"
+      height="25px"
+      viewBox="0 0 24 24"
+      stroke="#2D94EB"
+      strokeWidth="2"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+      fill="none"
+      color="#2D94EB"
+    >
+      <g id="SVGRepo_bgCarrier" strokeWidth="0" />
+      <g id="SVGRepo_tracerCarrier" strokeLinecap="round" strokeLinejoin="round" />
+      <g id="SVGRepo_iconCarrier">
+        <circle cx="12" cy="12" r="10" />
+        <path
+          strokeLinecap="round"
+          d="M12,22 C14.6666667,19.5757576 16,16.2424242 16,12 C16,7.75757576 14.6666667,4.42424242 12,2 C9.33333333,4.42424242 8,7.75757576 8,12 C8,16.2424242 9.33333333,19.5757576 12,22 Z"
+        />
+        <path
+          strokeLinecap="round"
+          d="M2.5 9L21.5 9M2.5 15L21.5 15"
+        />
+      </g>
+    </svg>
+  )
+}
+
+export const CV = () => {
+  return (
+    <svg
+      width="30px"
+      height="30px"
+      viewBox="0 0 24 24"
+      fill="none"
+    >
+      <g id="SVGRepo_bgCarrier" strokeWidth="0" />
+      <g id="SVGRepo_tracerCarrier" strokeLinecap="round" strokeLinejoin="round" />
+      <g id="SVGRepo_iconCarrier">
+        <path
+          d="M13 9L15 15L17 9M10 15C9.06812 15 8.60218 15 8.23463 14.8478C7.74458 14.6448 7.35523 14.2554 7.15224 13.7654C7 13.3978 7 12.9319 7 12C7 11.0681 7 10.6022 7.15224 10.2346C7.35523 9.74458 7.74458 9.35523 8.23463 9.15224C8.60218 9 9.06812 9 10 9M7.2 20H16.8C17.9201 20 18.4802 20 18.908 19.782C19.2843 19.5903 19.5903 19.2843 19.782 18.908C20 18.4802 20 17.9201 20 16.8V7.2C20 6.0799 20 5.51984 19.782 5.09202C19.5903 4.71569 19.2843 4.40973 18.908 4.21799C18.4802 4 17.9201 4 16.8 4H7.2C6.0799 4 5.51984 4 5.09202 4.21799C4.71569 4.40973 4.40973 4.71569 4.21799 5.09202C4 5.51984 4 6.07989 4 7.2V16.8C4 17.9201 4 18.4802 4.21799 18.908C4.40973 19.2843 4.71569 19.5903 5.09202 19.782C5.51984 20 6.07989 20 7.2 20Z"
+          stroke="#2D94EB"
+          strokeWidth="2"
+          strokeLinecap="round"
+          strokeLinejoin="round"
+        />
+      </g>
+    </svg>
+  )
+}
+
+export const ArrowBottom = () => {
+  return (
+    <svg width="25px" height="25px" viewBox="0 0 24 24" fill="none">
+      <g id="SVGRepo_bgCarrier" strokeWidth="0" />
+      <g id="SVGRepo_tracerCarrier" strokeLinecap="round" strokeLinejoin="round" />
+      <g id="SVGRepo_iconCarrier">
+        <path
+          d="M17 9.5L12 14.5L7 9.5"
+          stroke="#F2F2F2"
+          strokeWidth="1.5"
+          strokeLinecap="round"
+          strokeLinejoin="round"
+        />
       </g>
     </svg>
   )

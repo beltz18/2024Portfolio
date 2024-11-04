@@ -4,7 +4,7 @@ import { useRef }    from 'react'
 import { useEffect } from 'react'
 import { motion }    from 'framer-motion'
 import Typed         from 'typed.js'
-import data          from '@lib/En.json'
+import data          from '@lib/data/En.json'
 import { HeroT }     from '@typ/Hero'
 
 const Resume = ({ other, setOther }: HeroT) => {

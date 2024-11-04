@@ -17,7 +17,7 @@ const LinkIcons = ({ other }: HeroT) => {
         animate={{ opacity: 1 }}
         transition={{
           duration: .2,
-          ease: "anticipate",
+          ease: 'anticipate',
           delay: .1,
         }}
       >
@@ -25,9 +25,10 @@ const LinkIcons = ({ other }: HeroT) => {
           {
             Icons.map((icon, index) => (
               <Link
-                key={icon.name}
-                href={icon.url}
+                key={ icon.name }
+                href={ icon.url }
                 className='w-[75px] h-[75px]'
+                target='_blank'
               >
                 <motion.span
                   className={`h-full rounded-md flex flex-col items-center justify-center text-[12px] ${icon.color}`}
@@ -35,12 +36,12 @@ const LinkIcons = ({ other }: HeroT) => {
                   animate={{ opacity: 1, y: 0 }}
                   transition={{
                     duration: .3,
-                    ease: "anticipate",
+                    ease: 'anticipate',
                     delay: !other ? .3 + index : .3 + index + 1,
                   }}
                 >
-                  {icon.icon}
-                  {icon.name}
+                  { <icon.Icon size='40px' /> }
+                  { icon.name }
                 </motion.span>
               </Link>
             ))
@@ -48,28 +49,28 @@ const LinkIcons = ({ other }: HeroT) => {
         </div>
 
         <motion.div
-          className="hero-two bg-[#01161E] rounded-full"
+          className='hero-two bg-[#01161E] rounded-full'
           initial={{ opacity: 0, y: 5 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{
             duration: .3,
-            ease: "anticipate",
+            ease: 'anticipate',
             delay: other ? .3 : 3.3,
           }}
         >
-          <Link href="https://youtube.com/@AndiDev18" target='_blank'>
+          <Link href={ Icons[2].url } target='_blank'>
             <Image
               width={300}
               height={300}
-              src="/andi-dev.webp"
-              alt="Andi Dev"
+              src='/andi-dev.webp'
+              alt='Andi Dev'
               className='hero-logo logo'
             />
             <Image
               width={300}
               height={300}
-              src="/andi-dev.webp"
-              alt="Andi Dev"
+              src='/andi-dev.webp'
+              alt='Andi Dev'
               className='hero-logo2 logo'
             />
           </Link>

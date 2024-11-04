@@ -1,7 +1,10 @@
 'use client'
 
-import React        from 'react'
-import { useState } from 'react'
+import React, { useState } from 'react'
+import { useMediaQuery }   from 'react-responsive'
+import MobileMenu          from '@com/Navbar/MobileMenu'
+import { languages }       from '@lib/util'
+import { Lang, CV }        from '@com/Icons'
 import {
   Navbar,
   NavbarBrand,
@@ -10,8 +13,7 @@ import {
   Link,
   Avatar,
   NavbarMenuToggle,
-  NavbarMenu,
-  NavbarMenuItem,
+  Tooltip,
 } from '@nextui-org/react'
 import {
   baseClasses,
@@ -21,6 +23,7 @@ import {
 const Header = () => {
   const [active, setActive] = useState<string>('')
   const [menuOpen, setMenuOpen] = useState<boolean>(false)
+  const isMobile = useMediaQuery({ query: '(max-width: 767px)' })
 
   return (
     <>
@@ -65,35 +68,51 @@ const Header = () => {
         </NavbarContent>
 
         <NavbarContent as='div' justify='end'>
-          <Avatar
-            as='button'
-            className='w-[40px] h-[40px] bg-[#132233] border-[2px] border-[#598392] transition-transform'
-            color='success'
-            name='Andi Dev'
-            size='sm'
-            src='/andi-dev.webp'
-          />
+          {
+            !isMobile && (
+              <>
+                <span className='cursor-pointer'>
+                  <CV />
+                </span>
+
+                <span
+                  className='cursor-pointer relative'
+                >
+                  <Lang />
+                  <span className='text-[#F2F2F2] text-[9px] font-[800] px-[2px] absolute bottom-[-5px] right-[-5px]'>
+                    { languages[0].short }
+                  </span>
+                </span>
+              </>
+            )
+          }
+
+          <Tooltip
+            showArrow={ true }
+            placement='bottom'
+            closeDelay={ 1000 }
+            content={
+              <span className='cursor-pointer text-[#F2F2F2] bg-[#2D94EB] rounded-md px-4 py-1 my-2'>
+                Download CV
+              </span>
+            }
+          >
+            <Avatar
+              as='button'
+              className='w-[40px] h-[40px] bg-[#132233] border-[2px] border-[#598392] transition-transform'
+              color='success'
+              name='Andi Dev'
+              size='sm'
+              src='/andi-dev.webp'
+            />
+          </Tooltip>
         </NavbarContent>
 
-        <NavbarMenu className='w-full h-full bg-[#003049] z-50'>
-          {
-            menuItems.map((item, index) => (
-              <NavbarMenuItem key={`${item}-${index}`}>
-                <Link
-                  className={`w-full py-2 ${active === item.letter ? 'text-[#8D99AE]' : 'text-[#F2F2F2]'}`}
-                  href='#'
-                  size='lg'
-                  onClick={() => {
-                    setActive(item.letter)
-                    setMenuOpen(false)
-                  }}
-                >
-                  { item.name }
-                </Link>
-              </NavbarMenuItem>
-            ))
-          }
-        </NavbarMenu>
+        <MobileMenu
+          active={ active }
+          setActive={ setActive }
+          setMenuOpen={ setMenuOpen }
+        />
       </Navbar>
     </>
   )
