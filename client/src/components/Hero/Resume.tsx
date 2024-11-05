@@ -38,56 +38,56 @@ const Resume = ({ other, setOther }: HeroT) => {
   return (
     <>
       <div className='py-2 px-[24px] w-full h-full md:w-[60%] overflow-auto flex flex-col justify-center'>
-        <h1 className='text-[42px] font-[600]' ref={name} />
-        <h4 className='text-[24px] underline' ref={title} />
+        <h1 className='text-[42px] font-[600]' ref={ name } />
+        <h4 className='text-[16px] font-[800] text-[#2D94EB] underline' ref={ title } />
 
-        <p className={`text-[16px] text-justify mt-6 ${other ? 'hidden' : 'block'}`} ref={par1} />
-        <p className={`text-[14px] text-justify mt-6 ${!other ? 'hidden' : 'block'}`} ref={par2} />
+        <p className={`text-[16px] text-justify mt-6 ${other ? 'hidden' : 'block'}`} ref={ par1 } />
+        <p className={`text-[14px] text-justify mt-6 ${!other ? 'hidden' : 'block'}`} ref={ par2 } />
 
         <div className='flex items-center justify-center mt-6'>
           {
             showB && !other
               ?
-              (
-                <>
-                  <motion.span
-                    className='border-[1px] border-[#F2F2F2] px-6 py-2 rounded-md cursor-pointer hover:bg-[#f2f2f2a2] hover:text-[#111]'
-                    initial={{ opacity: 0 }}
-                    animate={{ opacity: 1 }}
-                    transition={{
-                      ease: "linear",
-                      duration: 2,
-                      x: { duration: 1 }
-                    }}
-                    onClick={() => {
-                      setOther(true)
-                      setShowB(false)
-                      typeAnother()
-                    }}
-                  >
-                    Show more
-                  </motion.span>
-                </>
-              )
+            (
+              <>
+                <motion.span
+                  className='border-[1px] border-[#2D94EB] text-[#2D94EB] px-6 py-2 rounded-md cursor-pointer hover:bg-[#132233] hover:text-[#F2F2F2]'
+                  initial={{ opacity: 0 }}
+                  animate={{ opacity: 1 }}
+                  transition={{
+                    ease: "linear",
+                    duration: 2,
+                    x: { duration: 1 }
+                  }}
+                  onClick={() => {
+                    setOther(true)
+                    setShowB(false)
+                    typeAnother()
+                  }}
+                >
+                  Show more
+                </motion.span>
+              </>
+            )
               :
-              (
-                <>
-                  <motion.a
-                    href='#'
-                    className='border-[1px] border-[#F2F2F2] px-6 py-2 rounded-md cursor-pointer hover:bg-[#f2f2f2a2] hover:text-[#111]'
-                    initial={{ opacity: 0 }}
-                    animate={{ opacity: 1 }}
-                    transition={{
-                      ease: "linear",
-                      duration: 2,
-                      x: { duration: 1 },
-                      delay: 8,
-                    }}
-                  >
-                    Download CV
-                  </motion.a>
-                </>
-              )
+            (
+              <>
+                <motion.a
+                  href='#'
+                  className='border-[1px] border-[#2D94EB] text-[#2D94EB] px-6 py-2 rounded-md cursor-pointer hover:bg-[#132233] hover:text-[#F2F2F2]'
+                  initial={{ opacity: 0 }}
+                  animate={{ opacity: 1 }}
+                  transition={{
+                    ease: "linear",
+                    duration: 2,
+                    x: { duration: 1 },
+                    delay: 8,
+                  }}
+                >
+                  Download CV
+                </motion.a>
+              </>
+            )
           }
         </div>
       </div>

@@ -11,7 +11,7 @@ const Hero = () => {
   return (
     <>
       <div className='min-h-[90vh] h-full relative'>
-        <div className='bg-[#0004] h-full absolute top-0 left-[0px] w-full z-40 flex flex-col md:flex-row'>
+        <div className='bg-[#0000004A] h-full absolute top-0 left-[0px] w-full z-40 flex flex-col md:flex-row'>
           <Resume
             other={ other }
             setOther={ setOther }

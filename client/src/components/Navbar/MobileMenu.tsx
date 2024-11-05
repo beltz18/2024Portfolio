@@ -9,7 +9,7 @@ import {
   menuItems,
   Icons,
 } from '@lib/util'
-import { ArrowBottom } from '@com/Icons'
+import { ArrowBottom } from '@com/Icons/MainIcons'
 import { MobileT }     from '@typ/MobileMenu'
 
 const MobileMenu = ({ active, setActive, setMenuOpen }: MobileT) => {
@@ -21,7 +21,7 @@ const MobileMenu = ({ active, setActive, setMenuOpen }: MobileT) => {
             <NavbarMenuItem key={`${item}-${index}`}>
               <Link
                 className={`w-full py-2 ${active === item.letter ? 'text-[#8D99AE]' : 'text-[#F2F2F2]'}`}
-                href='#'
+                href={ item.link }
                 size='lg'
                 onClick={() => {
                   setActive(item.letter)

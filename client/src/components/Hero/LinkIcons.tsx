@@ -64,7 +64,7 @@ const LinkIcons = ({ other }: HeroT) => {
               height={300}
               src='/andi-dev.webp'
               alt='Andi Dev'
-              className='hero-logo logo'
+              className='hero-logo logo smoke-animated'
             />
             <Image
               width={300}

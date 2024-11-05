@@ -4,7 +4,7 @@ import React, { useState } from 'react'
 import { useMediaQuery }   from 'react-responsive'
 import MobileMenu          from '@com/Navbar/MobileMenu'
 import { languages }       from '@lib/util'
-import { Lang, CV }        from '@com/Icons'
+import { Lang, CV }        from '@com/Icons/MainIcons'
 import {
   Navbar,
   NavbarBrand,

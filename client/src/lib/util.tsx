@@ -4,7 +4,7 @@ import {
   LinkedIn,
   GitHub,
   YouTube,
-} from '@com/Icons'
+} from '@com/Icons/MainIcons'
 
 const [n1, n2, n3] = data.navbar
 
@@ -19,12 +19,12 @@ export const menuItems = [
   {
     name: n1,
     letter: 'e',
-    link: '#',
+    link: '#Experience',
   },
   {
     name: n2,
     letter: 'c',
-    link: '#',
+    link: '#Contact',
   },
   {
     name: n3,
